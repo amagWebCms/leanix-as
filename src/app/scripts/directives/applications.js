@@ -89,6 +89,9 @@ angular.module('app')
                     "eventType": "OBJECT_CREATE",
                     "countOnly": "1"
                 });
+                console.log(date.toISOString());
+                console.log(activityParams.startDate);
+
                 ApiService.api('activities', activityParams)
                     .then(function (response) {
                         $scope.keyFigure2 = response.data.count;
