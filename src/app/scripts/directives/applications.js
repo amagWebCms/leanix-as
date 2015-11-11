@@ -1,6 +1,8 @@
 angular.module('app')
     .directive('applications', function () {
 
+        console.log("WOW LOG IST HERE.");
+
         var qualityData = function (amount, name) {
             this.amount = amount;
             this.name = name;
